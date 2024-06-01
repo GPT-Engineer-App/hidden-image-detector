@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steganography Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Result</h1>
+        <p>Is Steganography Detected: {{ result.is_stegano }}</p>
+        <p>Hidden Data: {{ result.lsb_data }}</p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
